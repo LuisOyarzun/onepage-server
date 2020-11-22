@@ -7,18 +7,17 @@
 
     try
     {
-         $json[] = array(
-                    'personal_id' => '1',
-                );
         //$array = unserialize(base64_decode($_REQUEST["datos"]));
-        $array = $_REQUEST["datos"];
+        //$array = $_REQUEST["datos"];
         //print_r($array[0]['nombre']);
-        echo json_encode($array);
+        echo json_encode('yes');
+        return 1;
     }
 
     catch(Exception $e)
     {
-        echo json_encode('malo');
+        echo json_encode('no');
+        return 0;
     }
 
     // foreach ($array as $dato)

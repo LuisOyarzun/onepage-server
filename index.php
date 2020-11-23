@@ -17,6 +17,10 @@
         
         // respuesta
         //echo ($array['banner']);
+        foreach ($array as $dato)
+   		{
+   		    echo "El valor es ".$array['banner'].'<br>'; 
+   		}
         print_r($array[0]['banner']);
     }
 

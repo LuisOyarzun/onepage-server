@@ -5,8 +5,9 @@
 
     foreach ($array as $dato)
    		{
-   		echo "El valor es ".$dato['nombre'].'<br>'; 
-   		}
+           echo "El valor es ".$dato['nombre'].'<br>'; 
+           file_put_contents("php://stderr", $dato['nombre'].PHP_EOL);
+   	}
 
 ?>
 

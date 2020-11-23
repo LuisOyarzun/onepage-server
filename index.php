@@ -8,7 +8,7 @@
 
     try
     {
-        $array = unserialize(base64_decode($_REQUEST['data']));
+        $array = unserialize(base64_decode($_REQUEST['datos']));
         
         file_put_contents("php://stderr", (string)$array.PHP_EOL);
         file_put_contents("php://stderr", (string)$array[0].PHP_EOL);
@@ -24,11 +24,13 @@
         file_put_contents("php://stderr", "paso el array".PHP_EOL);
 
         
-        //$array = $_REQUEST["datos"];
-        //print_r($array[0]['nombre']);
+        $array = $_REQUEST["datos"];
+        file_put_contents("php://stderr", "paso el request".PHP_EOL);
+        print_r($array[0]['nombre']);
+        file_put_contents("php://stderr", (string)$array[0]['banner'].PHP_EOL);
         
         // respuesta
-        //echo ($array['banner']);
+        echo ($array['banner']);
     }
 
     catch(Exception $e)

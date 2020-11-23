@@ -14,7 +14,7 @@
         
         // respuesta
         //echo json_encode($array);
-        echo ($array['banner']);
+        echo ($array);
     }
 
     catch(Exception $e)

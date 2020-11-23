@@ -13,7 +13,7 @@
         //print_r($array[0]['nombre']);
         
         // respuesta
-        echo unserialize(base64_decode($_REQUEST["data"]));
+        print_r($array);
     }
 
     catch(Exception $e)

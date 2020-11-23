@@ -8,12 +8,12 @@
 
     try
     {
-        $array = unserialize(base64_decode($_REQUEST["datos"]));
+        $array = unserialize(base64_decode($_REQUEST["data"]));
         //$array = $_REQUEST["datos"];
         //print_r($array[0]['nombre']);
         
         // respuesta
-        echo json_encode($array[0]);
+        echo json_encode($array);
     }
 
     catch(Exception $e)

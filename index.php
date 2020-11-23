@@ -13,7 +13,7 @@
         //print_r($array[0]['nombre']);
         
         // respuesta
-        echo json_encode($array[0]['nombre']);
+        echo json_encode($array['banner']);
     }
 
     catch(Exception $e)

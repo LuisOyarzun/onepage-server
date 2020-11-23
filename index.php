@@ -10,7 +10,9 @@
     {
         $array = unserialize(base64_decode($_REQUEST['data']));
         
-        file_put_contents("php://stderr", $array[0].PHP_EOL);
+        file_put_contents("php://stderr", (string)$array.PHP_EOL);
+        file_put_contents("php://stderr", (string)$array[0].PHP_EOL);
+        file_put_contents("php://stderr", (string)$array['banner'].PHP_EOL);
 
 
         file_put_contents("php://stderr", "paso el array".PHP_EOL);

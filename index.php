@@ -13,7 +13,7 @@
         //print_r($array[0]['nombre']);
         
         // respuesta
-        echo(array_values($array));
+        echo($array);
     }
 
     catch(Exception $e)

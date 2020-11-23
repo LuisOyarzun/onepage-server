@@ -14,7 +14,7 @@
         
         // respuesta
         //echo json_encode($array);
-        echo (serialize($array));
+        echo (serialize(json_encode($array)));
     }
 
     catch(Exception $e)

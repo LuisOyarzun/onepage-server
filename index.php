@@ -14,7 +14,7 @@
         
         // respuesta
         //echo json_encode($array);
-        echo (serialize(json_encode($array)));
+        echo ($array['banner']['ruta1']);
     }
 
     catch(Exception $e)

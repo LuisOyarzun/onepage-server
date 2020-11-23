@@ -8,12 +8,10 @@
 
     try
     {
-        file_put_contents("php://stderr", "entro al try!!!".PHP_EOL);
+        $array = unserialize(base64_decode($_REQUEST['data']));
+        
+        file_put_contents("php://stderr", $array[0].PHP_EOL);
 
-        //$array = unserialize(base64_decode($_REQUEST["data"]));
-        $array = $_REQUEST['data'];
-        echo($array);
-        file_put_contents("php://stderr", $array.PHP_EOL);
 
         file_put_contents("php://stderr", "paso el array".PHP_EOL);
 
@@ -23,13 +21,6 @@
         
         // respuesta
         //echo ($array['banner']);
-        foreach ($array as $dato)
-   		{
-   		    echo "El valor es ".$array['banner'].'<br>'; 
-           }
-
-         file_put_contents("php://stderr", $array.PHP_EOL);
-        print_r($array[0]['banner']);
     }
 
     catch(Exception $e)

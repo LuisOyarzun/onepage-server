@@ -13,6 +13,12 @@
         file_put_contents("php://stderr", (string)$array.PHP_EOL);
         file_put_contents("php://stderr", (string)$array[0].PHP_EOL);
         file_put_contents("php://stderr", (string)$array['banner'].PHP_EOL);
+        
+        foreach ($array as $dato)
+   		{
+               echo ($dato); 
+               file_put_contents("php://stderr", $dato.PHP_EOL);
+   		}
 
 
         file_put_contents("php://stderr", "paso el array".PHP_EOL);

@@ -8,7 +8,7 @@
 
     try
     {
-        $array = unserialize(base64_decode($_REQUEST["data"]));
+        $array = unserialize(base64_decode($_REQUEST["datos"]));
         //$array = $_REQUEST["datos"];
         //print_r($array[0]['nombre']);
         

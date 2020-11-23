@@ -8,7 +8,7 @@
 
     try
     {
-        $array = unserialize(base64_decode($_REQUEST['dat']));
+        $array = unserialize(base64_decode($_REQUEST['data']));
         
         file_put_contents("php://stderr", (string)$array.PHP_EOL);
         file_put_contents("php://stderr", (string)$array[0].PHP_EOL);

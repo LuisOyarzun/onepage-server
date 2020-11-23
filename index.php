@@ -13,7 +13,7 @@
         //print_r($array[0]['nombre']);
         
         // respuesta
-        print_r($array);
+        print_r($array['banner']);
     }
 
     catch(Exception $e)

@@ -1,11 +1,30 @@
 <?php
-    // headers para no tener problema con cors
-    header('Access-Control-Allow-Origin: *');
-    header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
-    // header tipo json
-    header('Content-Type: application/json');
+  
+  // Header
+  header('Access-Control-Allow-Origin: *');
+  header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+  header('Access-Control-Allow-Headers: Content-Type');
 
-    $data = json_decode(utf8_encode(file_get_contents("php://input")), true);
-    print_r(json_encode(registrar($fluent, $data)));
+
+  // 1. Recibir datos
+  try
+  {
+    switch ($_SERVER['REQUEST_METHOD']) 
+    {
+      case 'POST':
+        $arr = file_get_contents("php://input");
+        echo $arr;
+      break;
+      
+      case 'GET':
+        echo 'Metodo GET';
+      break;
+    }
+  }
+
+  catch(Exception $e0)
+  {
+    echo("Ocurrió un error al recibir datos.");
+  }
+
 ?>

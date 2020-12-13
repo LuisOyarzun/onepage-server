@@ -24,7 +24,7 @@
     {
       case 'POST':
         $arr = file_get_contents("php://input");
-        file_put_contents("php://stderr", $arr);
+        file_put_contents("php://stderr", "El arreglo completo es ".$arr);
       break;
       
       case 'GET':

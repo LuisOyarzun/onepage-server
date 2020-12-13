@@ -24,7 +24,7 @@
     {
       case 'POST':
         $arr = file_get_contents("php://input");
-        $datos = json_decode($arr, true);
+        $datos = explode("&", $arr);
         //$items = json_decode($data, true);
         //file_put_contents("php://stderr", "El arreglo completo es ".$arr);
         //file_put_contents("php://stderr", "Intento 1: ".$arr['banner']);

@@ -23,7 +23,7 @@
     switch ($_SERVER['REQUEST_METHOD']) 
     {
       case 'POST':
-        $arr = json_decode(file_get_contents("php://input"),true);
+        $arr = json_decode(file_get_contents("php://input"),false);
         //$items = json_decode($data, true);
         file_put_contents("php://stderr", "El arreglo completo es ".$arr);
         // file_put_contents("php://stderr", "Intento 1: ".$arr['banner']);

@@ -24,6 +24,7 @@
     {
       case 'POST':
         $arr = file_get_contents("php://input");
+        var_dump($arr);
         //$ruta2 = $arr['banner']['ruta2'];
         //$datos = explode("&", $arr);
         $datos = json_decode($arr, true);  
@@ -34,6 +35,9 @@
         //file_put_contents("php://stderr", "Intento 3: ".$arr[0]['banner']);
         //file_put_contents("php://stderr", "Intento 4: ".$arr{'banner'});
         file_put_contents("php://stderr", "Arreglo es:  ".$prueba);
+        file_put_contents("php://stderr", "Arreglo es:  ".$datos);
+        file_put_contents("php://stderr", var_dump($datos));
+        file_put_contents("php://stderr", var_dump($arr));
       break;
       
       case 'GET':

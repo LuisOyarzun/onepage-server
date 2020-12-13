@@ -23,10 +23,13 @@
     switch ($_SERVER['REQUEST_METHOD']) 
     {
       case 'POST':
-        $arr = file_get_contents("php://input");
+        //$arr = file_get_contents("php://input");
         //$datos = json_decode($arr, true); 
-        var_dump($arr);
-        file_put_contents("php://stderr", var_dump($arr));
+        // var_dump($arr);
+        // file_put_contents("php://stderr", var_dump($arr));
+        $data = json_decode(file_get_contents('php://input'), true);
+        $ruta2 = $data['banner']['ruta2'];
+        file_put_contents("php://stderr", "Prueba xdxd: ".$ruta2)
       break;
       
       case 'GET':

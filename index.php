@@ -24,10 +24,11 @@
     {
       case 'POST':
         $arr = file_get_contents("php://input");
-        file_put_contents("php://stderr", "var dump es: ".var_dump($arr));
+        //file_put_contents("php://stderr", "var dump es: ".var_dump($arr));
         //$datos = json_decode($arr, true); 
         // var_dump($arr);
         // file_put_contents("php://stderr", var_dump($arr));
+        var_dump($arr);
         file_put_contents("php://stderr", "arreglo es:  ".$arr);
       break;
       

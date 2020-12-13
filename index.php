@@ -24,11 +24,13 @@
     {
       case 'POST':
         $arr = file_get_contents("php://input");
-        file_put_contents("php://stderr", "El arreglo completo es ".$arr);
-        file_put_contents("php://stderr", "Intento 1: ".$arr['banner']);
-        file_put_contents("php://stderr", "Intento 2: ".$arr['banner']['ruta1']);
-        file_put_contents("php://stderr", "Intento 3: ".$arr[0]['banner']);
-        file_put_contents("php://stderr", "Intento 4: ".$arr{'banner'});
+        $datos = json_decode($arr,true);
+        //$items = json_decode($data, true);
+        file_put_contents("php://stderr", "El arreglo completo es ".$datos);
+        // file_put_contents("php://stderr", "Intento 1: ".$arr['banner']);
+        // file_put_contents("php://stderr", "Intento 2: ".$arr['banner']['ruta1']);
+        // file_put_contents("php://stderr", "Intento 3: ".$arr[0]['banner']);
+        // file_put_contents("php://stderr", "Intento 4: ".$arr{'banner'});
         //file_put_contents("php://stderr", "Intento 5: ".$arr);
       break;
       

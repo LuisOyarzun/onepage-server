@@ -28,8 +28,8 @@
         //$datos = json_decode($arr, true); 
         // var_dump($arr);
         // file_put_contents("php://stderr", var_dump($arr));
-        var_dump($arr);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr->{'banner':'ruta1'});
+        //var_dump($arr);
+        file_put_contents("php://stderr", "arreglo es:  ".$arr);
       break;
       
       case 'GET':

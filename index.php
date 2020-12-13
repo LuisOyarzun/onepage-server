@@ -29,7 +29,7 @@
         // var_dump($arr);
         // file_put_contents("php://stderr", var_dump($arr));
         var_dump($arr);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr->{'banner'});
+        file_put_contents("php://stderr", "arreglo es:  ".$arr->{'banner':'ruta1'});
       break;
       
       case 'GET':

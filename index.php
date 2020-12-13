@@ -28,6 +28,7 @@
         // var_dump($arr);
         // file_put_contents("php://stderr", var_dump($arr));
         $data = json_decode(file_get_contents('php://input'), true);
+        file_put_contents("php://stderr", "El arreglo es: ".$data)
         $ruta2 = $data['banner']['ruta2'];
         file_put_contents("php://stderr", "Prueba xdxd: ".$ruta2)
       break;

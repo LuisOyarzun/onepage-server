@@ -27,12 +27,13 @@
         //$ruta2 = $arr['banner']['ruta2'];
         //$datos = explode("&", $arr);
         $datos = json_decode($arr, true);  
+        $prueba = var_dump($datos);
         //file_put_contents("php://stderr", "El arreglo completo es ".$arr);
         //file_put_contents("php://stderr", "Intento 1: ".$arr['banner']);
         //file_put_contents("php://stderr", "Intento 2: ".$arr['banner']['ruta1']);
         //file_put_contents("php://stderr", "Intento 3: ".$arr[0]['banner']);
         //file_put_contents("php://stderr", "Intento 4: ".$arr{'banner'});
-        file_put_contents("php://stderr", "Arreglo es:  ".var_dump($datos);
+        file_put_contents("php://stderr", "Arreglo es:  ".$prueba);
       break;
       
       case 'GET':

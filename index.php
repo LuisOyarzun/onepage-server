@@ -31,7 +31,7 @@
         //file_put_contents("php://stderr", "Intento 2: ".$arr['banner']['ruta1']);
         //file_put_contents("php://stderr", "Intento 3: ".$arr[0]['banner']);
         //file_put_contents("php://stderr", "Intento 4: ".$arr{'banner'});
-        file_put_contents("php://stderr", "Intento 5: ".$datos['banner']);
+        file_put_contents("php://stderr", "Intento 5: ".$datos[0]['banner']);
       break;
       
       case 'GET':

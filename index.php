@@ -24,12 +24,9 @@
     {
       case 'POST':
         $arr = file_get_contents("php://input");
+        //$datos = json_decode($arr, true); 
         var_dump($arr);
-        //$ruta2 = $arr['banner']['ruta2'];
-        //$datos = explode("&", $arr);
-        $datos = json_decode($arr, true);  
-        $prueba = var_dump($datos);
-        file_put_contents("php://stderr", var_dump($datos));
+        file_put_contents("php://stderr", var_dump($arr));
       break;
       
       case 'GET':

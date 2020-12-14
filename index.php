@@ -29,8 +29,8 @@
         // var_dump($arr);
         // file_put_contents("php://stderr", var_dump($arr));
         //var_dump($arr);
-        echo($arr);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr{"banner":{"ruta1"}});
+        //echo($arr);
+        //file_put_contents("php://stderr", "arreglo es:  ".$arr{"banner":{"ruta1"}});
         //file_put_contents("php://stderr", "\n\nintento 2 arreglo es:  ".$arr['banner']['ruta1']);
         return 1;
       break;
@@ -47,6 +47,7 @@
   {
     //file_put_contents("php://stderr", "Error - Ocurrió un error en recibir el POST o GET");
     echo("Ocurrió un error al recibir datos.");
+    return 0;
   }
   
   // 2. Crear subdominio

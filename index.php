@@ -32,7 +32,6 @@
         //echo($arr);
         //file_put_contents("php://stderr", "arreglo es:  ".$arr{"banner":{"ruta1"}});
         //file_put_contents("php://stderr", "\n\nintento 2 arreglo es:  ".$arr['banner']['ruta1']);
-        return 1;
       break;
       
       case 'GET':
@@ -40,6 +39,7 @@
       break;
     }
 
+    return 1;
     //file_put_contents("php://stderr", "OK - Recibió el POST o GET");
   }
 

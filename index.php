@@ -30,7 +30,7 @@
         // file_put_contents("php://stderr", var_dump($arr));
         //var_dump($arr);
         echo($arr);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr);
+        file_put_contents("php://stderr", "arreglo es:  ".$arr{"banner":{"ruta1"}});
         //file_put_contents("php://stderr", "\n\nintento 2 arreglo es:  ".$arr['banner']['ruta1']);
         return 1;
       break;

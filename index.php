@@ -25,7 +25,7 @@
       case 'POST':
         $arr = file_get_contents("php://input");
         $arr = json_decode($arr,true);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta1"]);
+        file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
         //file_put_contents("php://stderr", "var dump es: ".var_dump($arr));
         //$datos = json_decode($arr, true); 
         // var_dump($arr);

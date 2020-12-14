@@ -31,7 +31,7 @@
         //var_dump($arr);
         echo($arr);
         file_put_contents("php://stderr", "arreglo es:  ".$arr);
-        file_put_contents("php://stderr", "\n\nintento 2 arreglo es:  ".$arr{'banner'}{'ruta1'});
+        file_put_contents("php://stderr", "\n\nintento 2 arreglo es:  ".$arr{'banner' => 'ruta1'});
       break;
       
       case 'GET':

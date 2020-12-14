@@ -39,7 +39,7 @@
       break;
     }
 
-    return 1;
+    echo(1);
     //file_put_contents("php://stderr", "OK - Recibió el POST o GET");
   }
 
@@ -47,7 +47,7 @@
   {
     //file_put_contents("php://stderr", "Error - Ocurrió un error en recibir el POST o GET");
     echo("Ocurrió un error al recibir datos.");
-    return 0;
+    echo(0);
   }
   
   // 2. Crear subdominio

@@ -1,29 +1,27 @@
 <?php
   /* Comando para ver logs de heroku: heroku logs -t -a onepage-server */
-    //$dominioPermitido ="https://productochile.cl";
 
-    // Header
-    header('Access-Control-Allow-Origin: *');
-    header('Access-Control-Allow-Origin: *');
-    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-    header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-    header('Access-Control-Allow-Headers: Content-Type');
-    header('Content-Type: application/json');
-  // header('Access-Control-Allow-Origin: *');
-  // header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-  // header('Access-Control-Allow-Headers: Content-Type');
- 
+  // Header
+  header('Access-Control-Allow-Origin: *');
+  header('Access-Control-Allow-Origin: *');
+  header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+  header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+  header('Access-Control-Allow-Headers: Content-Type');
+  header('Content-Type: application/json');
 
   // 0. Habilito permisos para recibir datos, uso de variable y uso de require
   // Require
   require('cPanel.php');
   
-  
   // Variables
   $dominioPrincipal = 'productochile.cl';
   $cpanel = new CPANEL('productochile', 'yC7A6&!bCrpO', $dominioPrincipal);
+  // Trozo de código a repetir para generar productos y/o servicios en el onepage
   $codigoArepetir='';
+  // Contador de repeticiones
   $i=2;
+  // Nombre del subdominio = nombre de la empresa
+  $nombreSubdominio='';
 
   // 1. Recibir datos
   try
@@ -31,23 +29,16 @@
     $method = $_SERVER['REQUEST_METHOD'];
     file_put_contents("php://stderr", "metodo es:  ".$method);
     
-      if ($method == "POST")
-      {
-        $arr = file_get_contents("php://input");
-        $arr = json_decode($arr,true);
-        //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr);
-        
-
-        // Nombre del subdominio y del onepage
-        $nombreSubdominio = $arr["nombreEmpresa"];
-      }
-      //break;
-      
-      // case 'GET':
-      //   echo 'Metodo GET';
-      // break;
-    
+    if ($method == "POST")
+    {
+      $arr = file_get_contents("php://input");
+      $arr = json_decode($arr,true);
+      //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
+      file_put_contents("php://stderr", "arreglo es:  ".$arr);
+      // Nombre del subdominio y del onepage
+      $nombreSubdominio = $arr["nombreEmpresa"];
+      file_put_contents("php://stderr", "Nombre del subdominio es:  ".$nombreSubdominio);
+    }    
 
     file_put_contents("php://stderr", "OK - Recibió el POST o GET");
   }

@@ -1,6 +1,6 @@
 <?php
   /* Comando para ver logs de heroku: heroku logs -t -a onepage-server */
-  $dominioPermitido ="https://www.productochile.cl/#/panel/config";
+  $dominioPermitido ="https://www.productochile.cl/";
 
     // Header
     //header('Access-Control-Allow-Origin: *');

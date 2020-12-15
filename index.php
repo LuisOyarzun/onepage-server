@@ -26,8 +26,8 @@
   // 1. Recibir datos
   try
   {
-    // $method = $_SERVER['REQUEST_METHOD'];
-    // file_put_contents("php://stderr", "metodo es:  ".$method);
+    $method = $_SERVER['REQUEST_METHOD'];
+    file_put_contents("php://stderr", "metodo es:  ".$method."<br>");
 
     switch ($_SERVER['REQUEST_METHOD']) 
     {
@@ -36,7 +36,7 @@
         $arr = json_decode($arr,true);
         //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
         file_put_contents("php://stderr", "arreglo es:  ".$arr);
-        
+
         // Nombre del subdominio y del onepage
         $nombreSubdominio = $arr["nombreEmpresa"];
         file_put_contents("php://stderr", "Nombre del subdominio es:  ".$nombreSubdominio);

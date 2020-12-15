@@ -26,19 +26,27 @@
   // 1. Recibir datos
   try
   {
-    $method = $_SERVER['REQUEST_METHOD'];
-    file_put_contents("php://stderr", "metodo es:  ".$method);
-    
-    if ($method == "POST")
+    // $method = $_SERVER['REQUEST_METHOD'];
+    // file_put_contents("php://stderr", "metodo es:  ".$method);
+
+    switch ($_SERVER['REQUEST_METHOD']) 
     {
-      $arr = file_get_contents("php://input");
-      $arr = json_decode($arr,true);
-      //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
-      file_put_contents("php://stderr", "arreglo es:  ".$arr);
-      // Nombre del subdominio y del onepage
-      $nombreSubdominio = $arr["nombreEmpresa"];
-      file_put_contents("php://stderr", "Nombre del subdominio es:  ".$nombreSubdominio);
-    }    
+      case 'POST':
+        $arr = file_get_contents("php://input");
+        $arr = json_decode($arr,true);
+        //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
+        file_put_contents("php://stderr", "arreglo es:  ".$arr);
+        
+        // Nombre del subdominio y del onepage
+        $nombreSubdominio = $arr["nombreEmpresa"];
+        file_put_contents("php://stderr", "Nombre del subdominio es:  ".$nombreSubdominio);
+
+      break;
+      
+      // case 'GET':
+      //    echo 'Metodo GET';
+      // break;
+    }
 
     file_put_contents("php://stderr", "OK - Recibió el POST o GET");
   }

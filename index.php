@@ -107,6 +107,7 @@
   que puedes verificar en nuestra sección de preguntas frecuentes.</p></div></div>';
   
   $cantidadProductos = $arr["cantidadProductosServicios"];
+  file_put_contents("php://stderr", 'Cantidad de productos es: '.$cantidadProductos."\n");
 
   while($i<=intval($cantidadProductos))
   {
@@ -269,7 +270,7 @@
             <div
               class="u-align-center u-container-style u-layout-cell u-palette-3-base u-right-cell u-size-20 u-layout-cell-3">
               <div class="u-container-layout u-valign-top u-container-layout-6">
-                <h4 class="u-text u-text-5">'.$arr["cabecera"]["carta3"]["titulo"].'</h4>
+                <h4 class="u-text u-text-5">'.$arr["cabecera"]["carta3"]["titulo"].'</h4> 
                 <p class="u-text u-text-body-alt-color u-text-6">'.$arr["cabecera"]["carta3"]["parrafo"].'</p></div></div></div></div></div></section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-2"
       id="carousel_9340">
@@ -279,14 +280,10 @@
             <div class="u-layout-row">
               <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
-                  <h2 class="u-text u-text-1">TITULO 4<br>
+                  <h2 class="u-text u-text-1">'.$arr["cuerpo"]["seccion1"]["titulo"].'<br>
                   </h2>
-                  <h4 class="u-text u-text-2">SUBTITULO 1</h4>
-                  <p class="u-text u-text-3">Este, es el párrafo 4 de la página web generada. Intente tener esta misma
-                    cantidad de palabras para un mejor estilo.<br>La idea central de esta web es brindar un ejemplo visual
-                    de como se vería el one-page generado desde la plataforma central. Recuerda que puedes editar no solo
-                    los párrafos, títulos y subtítulos de la web, si no también sus colores para que combinen con los
-                    colores de tu servicio o institución.<br>¡Gracias por usar nuestra plataforma!</p></div></div>
+                  <h4 class="u-text u-text-2">'.["cuerpo"]["seccion1"]["subtitulo"].'</h4>
+                  <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion1"]["parrafo"].'</p></div></div>
               <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1"data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
     </section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-3"

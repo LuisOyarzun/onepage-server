@@ -61,17 +61,28 @@
   // 2. Crear subdominio
   try
   {
-    $addsubdomain = $cpanel -> api2
-    (
+    // $addsubdomain = $cpanel -> api2
+    // (
+    //   'SubDomain', 'addsubdomain',
+    //   array(
+    //     'domain'                => $nombreSubdominio,
+    //     'rootdomain'            => $dominioPrincipal,
+    //     'dir'                   => '/public_html/'.$nombreSubdominio,
+    //     'disallowdot'           => '1',
+    //     )
+    // );
+
+    $get_userdata = $cpanel->uapi(
       'SubDomain', 'addsubdomain',
-      array(
-        'domain'                => (string)$nombreSubdominio,
-        'rootdomain'            => $dominioPrincipal,
-        'dir'                   => '/public_html/'.$nombreSubdominio,
-        'disallowdot'           => '1',
-        )
+          array(
+          'domain'                => $nombreSubdominio,
+          'rootdomain'            => $dominioPrincipal,
+          'dir'                   => '/public_html/{{$nombreSubdominio}}',
+          'disallowdot'           => '1',
+      )
     );
     
+    file_put_contents("php://stderr", 'Texto raro es: /public_html/{{$nombreSubdominio}}');
     file_put_contents("php://stderr", "OK - Subdominio listo."."\n");
   }
 

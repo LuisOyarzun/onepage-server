@@ -1,19 +1,19 @@
 <?php
   /* Comando para ver logs de heroku: heroku logs -t -a onepage-server */
 
+    // Header
+    header('Access-Control-Allow-Origin: *');
+    //header('Access-Control-Allow-Origin: www.productochile.cl')
+    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+    header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+    header('Access-Control-Allow-Headers: Content-Type');
+    header('Content-Type: application/json');
+    //header('content-type: application/json; charset=utf-8');
+
   // 0. Habilito permisos para recibir datos, uso de variable y uso de require
   // Require
   require('cpanel/cPanel.php');
   
-  // Header
-  header('Access-Control-Allow-Origin: *');
-  //header('Access-Control-Allow-Origin: www.productochile.cl')
-  header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-  header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-  header('Access-Control-Allow-Headers: Content-Type');
-  header('Content-Type: application/json');
-  //header('content-type: application/json; charset=utf-8');
-
   
   // Variables
   $dominioPrincipal = 'productochile.cl';

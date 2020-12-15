@@ -1,17 +1,18 @@
 <?php
+http_response_code(200);
   /* Comando para ver logs de heroku: heroku logs -t -a onepage-server */
     //$dominioPermitido ="https://productochile.cl";
 
     // Header
     // header('Access-Control-Allow-Origin: *');
-    // header('Access-Control-Allow-Origin: '.$dominioPermitido);
-    // header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-    // header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-    // header('Access-Control-Allow-Headers: Content-Type');
-    // header('Content-Type: application/json');
-  header('Access-Control-Allow-Origin: *');
-  header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-  header('Access-Control-Allow-Headers: Content-Type');
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+    header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+    header('Access-Control-Allow-Headers: Content-Type');
+    header('Content-Type: application/json');
+  // header('Access-Control-Allow-Origin: *');
+  // header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+  // header('Access-Control-Allow-Headers: Content-Type');
 
   // 0. Habilito permisos para recibir datos, uso de variable y uso de require
   // Require
@@ -34,6 +35,7 @@
         $arr = json_decode($arr,true);
         //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
         file_put_contents("php://stderr", "arreglo es:  ".$arr);
+        
 
         // Nombre del subdominio y del onepage
         $nombreSubdominio = "aaa";

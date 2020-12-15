@@ -72,17 +72,19 @@
     //     )
     // );
 
+    $dir = '/public_html/'.$nombreSubdominio;
+
     $get_userdata = $cpanel->uapi(
       'SubDomain', 'addsubdomain',
           array(
           'domain'                => $nombreSubdominio,
           'rootdomain'            => $dominioPrincipal,
-          'dir'                   => '/public_html/{{$nombreSubdominio}}',
+          'dir'                   => $dir,
           'disallowdot'           => '1',
       )
     );
     
-    file_put_contents("php://stderr", 'Texto raro es: /public_html/{{$nombreSubdominio}}');
+    file_put_contents("php://stderr", 'DIR es: '.$dir);
     file_put_contents("php://stderr", "OK - Subdominio listo."."\n");
   }
 

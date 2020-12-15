@@ -8,6 +8,8 @@
     header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
     header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
     header('Access-Control-Allow-Headers: Content-Type');
+    header('Acces-Control-Request-Headers: append,delete,entries,foreach,get,has,keys,set,values');
+    header('Acces-Control-Request-Method: POST');
     header('Content-Type: application/json');
 
   // 0. Habilito permisos para recibir datos, uso de variable y uso de require
@@ -27,10 +29,6 @@
     switch ($_SERVER['REQUEST_METHOD']) 
     {
       case 'POST':
-        header('Access-Control-Allow-Origin: *');
-        header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
-        header("HTTP/1.1 200 OK");
-        
         $arr = file_get_contents("php://input");
         $arr = json_decode($arr,true);
         //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);

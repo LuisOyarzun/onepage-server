@@ -40,7 +40,7 @@
         
 
         // Nombre del subdominio y del onepage
-        $nombreSubdominio = "aaa";
+        $nombreSubdominio = $arr["nombreEmpresa"];
       }
       //break;
       

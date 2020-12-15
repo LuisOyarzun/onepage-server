@@ -106,7 +106,9 @@
   </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">Titulo</h3><p class="u-gallery-text">Esta es la descrpción de tu producto y/o servicio. Recuerda que hay un máximo
   que puedes verificar en nuestra sección de preguntas frecuentes.</p></div></div>';
   
-  while($i<=5)
+  $cantidadProductos = $arr["cantidadProductosServicios"];
+
+  while($i<=intval($cantidadProductos))
   {
     $codigoArepetir = $codigoArepetir.'<div class="u-effect-fade u-gallery-item"><div class="u-back-slide"><img class="u-back-image u-expanded" src="images/1.svg" alt="Titulo">
     </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">Titulo</h3><p class="u-gallery-text">Esta es la descrpción de tu producto y/o servicio. Recuerda que hay un máximo

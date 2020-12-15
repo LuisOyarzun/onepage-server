@@ -1,5 +1,4 @@
 <?php
-http_response_code(200);
   /* Comando para ver logs de heroku: heroku logs -t -a onepage-server */
     //$dominioPermitido ="https://productochile.cl";
 
@@ -28,9 +27,10 @@ http_response_code(200);
   // 1. Recibir datos
   try
   {
-    switch ($_SERVER['REQUEST_METHOD']) 
-    {
-      case 'POST':
+    $method = $_SERVER['REQUEST_METHOD'];
+    
+      if ($method == "POST")
+      {
         $arr = file_get_contents("php://input");
         $arr = json_decode($arr,true);
         //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
@@ -39,12 +39,13 @@ http_response_code(200);
 
         // Nombre del subdominio y del onepage
         $nombreSubdominio = "aaa";
-      break;
+      }
+      //break;
       
-      case 'GET':
-        echo 'Metodo GET';
-      break;
-    }
+      // case 'GET':
+      //   echo 'Metodo GET';
+      // break;
+    
 
     file_put_contents("php://stderr", "OK - Recibió el POST o GET");
   }

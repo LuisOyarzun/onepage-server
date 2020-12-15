@@ -260,20 +260,17 @@
             <div class="u-container-style u-layout-cell u-left-cell u-palette-1-base u-size-20 u-layout-cell-1">
               <div class="u-container-layout u-valign-top u-container-layout-4">
                 <h4 class="u-align-center u-text u-text-1">'.$arr["cabecera"]["carta1"]["titulo"].'</h4>
-                <p class="u-align-center u-text u-text-body-alt-color u-text-2">Este, es el párrafo 1 de la página web
-                  generada. Intente tener esta misma cantidad de palabras para un mejor estilo.</p>
+                <p class="u-align-center u-text u-text-body-alt-color u-text-2">'.$arr["cabecera"]["carta1"]["parrafo"].'</p>
               </div></div>
             <div class="u-container-style u-layout-cell u-palette-2-base u-size-20 u-layout-cell-2">
               <div class="u-container-layout u-valign-top u-container-layout-5">
-                <h4 class="u-align-center u-text u-text-3">TITULO 2</h4>
-                <p class="u-align-center u-text u-text-body-alt-color u-text-4">Este, es el párrafo 2 de la página web
-                  generada. Intente tener esta misma cantidad de palabras para un mejor estilo.<br></p></div></div>
+                <h4 class="u-align-center u-text u-text-3">'.$arr["cabecera"]["carta2"]["titulo"].'</h4>
+                <p class="u-align-center u-text u-text-body-alt-color u-text-4">'.$arr["cabecera"]["carta2"]["parrafo"].'<br></p></div></div>
             <div
               class="u-align-center u-container-style u-layout-cell u-palette-3-base u-right-cell u-size-20 u-layout-cell-3">
               <div class="u-container-layout u-valign-top u-container-layout-6">
-                <h4 class="u-text u-text-5">TITULO 3</h4>
-                <p class="u-text u-text-body-alt-color u-text-6">Este, es el párrafo 3 de la página web generada. Intente
-                  tener esta misma cantidad de palabras para un mejor estilo.</p></div></div></div></div></div></section>
+                <h4 class="u-text u-text-5">'.$arr["cabecera"]["carta3"]["titulo"].'</h4>
+                <p class="u-text u-text-body-alt-color u-text-6">'..$arr["cabecera"]["carta3"]["parrafo"]..'</p></div></div></div></div></div></section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-2"
       id="carousel_9340">
       <div class="u-clearfix u-sheet u-sheet-1">

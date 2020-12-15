@@ -3,24 +3,20 @@
     //$dominioPermitido ="https://productochile.cl";
 
     // Header
-    // header('Access-Control-Allow-Origin: *');
-    // header('Access-Control-Allow-Origin: *');
-    // header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-    // header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-    // header('Access-Control-Allow-Headers: Content-Type');
-    // header('Content-Type: application/json');
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+    header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+    header('Access-Control-Allow-Headers: Content-Type');
+    header('Content-Type: application/json');
   // header('Access-Control-Allow-Origin: *');
   // header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
   // header('Access-Control-Allow-Headers: Content-Type');
-  header("Access-Control-Allow-Origin: http://localhost:4200");   
-  header("Content-Type: application/json; charset=UTF-8");    
-  header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");    
-  header("Access-Control-Max-Age: 3600");    
-  header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");    
+ 
 
   // 0. Habilito permisos para recibir datos, uso de variable y uso de require
   // Require
-  require('cpanel/cPanel.php');
+  require('cPanel.php');
   
   
   // Variables

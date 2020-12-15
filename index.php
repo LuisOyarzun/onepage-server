@@ -298,14 +298,9 @@
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <h2 class="u-text u-text-1">TITULO 5</h2>
-                  <h4 class="u-text u-text-2">SUBTITULO 2</h4>
-                  <p class="u-text u-text-3">Este, es el párrafo 5 de la página web generada. Intente tener esta misma
-                    cantidad de palabras para un mejor estilo.<br>La idea central de esta web es brindar un ejemplo visual
-                    de como se vería el one-page generado desde la plataforma central. Recuerda que puedes editar no solo
-                    los párrafos, títulos y subtítulos de la web, si no también sus colores para que combinen con los
-                    colores de tu servicio o institución.<br>¡Gracias por usar nuestra plataforma!
-                  </p></div></div></div></div></div></div></section>
+                  <h2 class="u-text u-text-1">'.$arr["cuerpo"]["seccion2"]["titulo"].'</h2>
+                  <h4 class="u-text u-text-2">'.$arr["cuerpo"]["seccion2"]["subtitulo"].'</h4>
+                  <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion2"]["parrafo"].'</p></div></div></div></div></div></div></section>
     <section class="u-align-left u-clearfix u-palette-5-dark-3 u-section-4" id="carousel_7dd3">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout"><div class="u-layout-row"><div class="u-size-60"><div class="u-layout-col"><div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1"
@@ -313,14 +308,8 @@
                     <div class="u-container-layout u-container-layout-1"></div>
                   </div><div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                     <div class="u-container-layout u-container-layout-2">
-                      <h2 class="u-text u-text-default u-text-1">Titulo 6</h2>
-                      <p class="u-text u-text-default u-text-2">Este, es el párrafo 6 de la página web generada. Intente
-                        tener esta misma cantidad de palabras para un mejor estilo. La idea central de esta web es brindar
-                        un ejemplo visual de como se vería el one-page generado desde la plataforma central. Recuerda que
-                        puedes editar no solo los párrafos, títulos y subtítulos de la web, si no también sus colores para
-                        que combinen con los colores de tu servicio o institución.<br>¡Gracias por usar nuestra
-                        plataforma!
-                      </p></div></div></div></div></div></div></div></div></section>
+                      <h2 class="u-text u-text-default u-text-1">'.$arr["cuerpo"]["seccion3"]["titulo"].'</h2>
+                      <p class="u-text u-text-default u-text-2">'.$arr["cuerpo"]["seccion3"]["parrafo"].'</p></div></div></div></div></div></div></div></div></section>
     <section class="u-align-center u-clearfix u-palette-5-dark-2 u-section-5" id="sec-b81f">
       <div class="u-clearfix u-sheet u-sheet-1"><h2 class="u-text u-text-1">TITULO 7</h2><div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
           <div class="u-gallery-inner u-gallery-inner-1">'.$codigoArepetir.
@@ -328,12 +317,11 @@
           ' </div></div></div></section>
           <section class="u-clearfix u-palette-5-dark-3 u-section-6" id="carousel_0c2b">
             <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1"><div class="u-layout">
-            <div class="u-layout-row"><div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1"><div class="u-container-layout u-valign-top u-container-layout-1"><h4 class="u-text u-text-1">SUBTITULO 3<br></h4><h2 class="u-text u-text-2">Titulo 8</h2>
-          <p class="u-text u-text-grey-30 u-text-3">Este, es el párrafo 7 de la página web generada. Intente tener esta misma cantidad de palabras para un mejor estilo. La idea central de esta web es brindar un ejemplo visual de como se vería el one-page generado desde la plataforma central. Recuerda que puedes
-          editar no solo los párrafos, títulos y subtítulos de la web, si no también sus colores para que combinen con los colores de tu servicio o institución.<br></p></div></div><div class="u-container-style u-layout-cell u-right-cell u-size-30"><div class="u-container-layout u-container-layout-2">
-          <p class="u-text u-text-grey-30 u-text-4">Correo electrónico</p><p class="u-text u-text-grey-30 u-text-5">parrafo8</p><p class="u-text u-text-grey-30 u-text-6">Dirección</p><p class="u-text u-text-grey-30 u-text-7">parrafo9</p>
+            <div class="u-layout-row"><div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1"><div class="u-container-layout u-valign-top u-container-layout-1"><h4 class="u-text u-text-1">'.$arr["footer"]["subtitulo"].'<br></h4><h2 class="u-text u-text-2">'.$arr["footer"]["titulo"].'</h2>
+          <p class="u-text u-text-grey-30 u-text-3">'.$arr["footer"]["cuerpo"].'<br></p></div></div><div class="u-container-style u-layout-cell u-right-cell u-size-30"><div class="u-container-layout u-container-layout-2">
+          <p class="u-text u-text-grey-30 u-text-4">Correo electrónico</p><p class="u-text u-text-grey-30 u-text-5">'.$arr["footer"]["correo"].'</p><p class="u-text u-text-grey-30 u-text-6">Dirección</p><p class="u-text u-text-grey-30 u-text-7">'.$arr["footer"]["direccion"].'</p>
           <div class="u-social-icons u-spacing-10 u-social-icons-1">  <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-facebook u-social-type-logo u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-84c7"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-84c7">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="'.$array["footer"]["facebook"].'"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-84c7">
           <pathd="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z">
           ';
     

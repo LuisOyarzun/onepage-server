@@ -35,11 +35,11 @@
         $arr = file_get_contents("php://input");
         $arr = json_decode($arr,true);
         //file_put_contents("php://stderr", "arreglo es:  ".$arr["banner"]["ruta2"]);
-        file_put_contents("php://stderr", "arreglo es:  ".$arr);
+        file_put_contents("php://stderr", "arreglo es:  ".$arr."\n");
 
         // Nombre del subdominio y del onepage
         $nombreSubdominio = $arr["nombreEmpresa"];
-        file_put_contents("php://stderr", "Nombre del subdominio es:  ".$nombreSubdominio);
+        file_put_contents("php://stderr", "Nombre del subdominio es:  ".$nombreSubdominio."\n");
 
       break;
       
@@ -48,12 +48,12 @@
       // break;
     }
 
-    file_put_contents("php://stderr", "OK - Recibió el POST o GET");
+    file_put_contents("php://stderr", "OK - Recibió el POST o GET"."\n");
   }
 
   catch(Exception $e0)
   {
-    file_put_contents("php://stderr", "Error - Ocurrió un error en recibir el POST o GET");
+    file_put_contents("php://stderr", "Error - Ocurrió un error en recibir el POST o GET"."\n");
     //echo("Ocurrió un error al recibir datos.");
     echo(0);
   }
@@ -65,19 +65,19 @@
     (
       'SubDomain', 'addsubdomain',
       array(
-        'domain'                => $nombreSubdominio,
+        'domain'                => (string)$nombreSubdominio,
         'rootdomain'            => $dominioPrincipal,
         'dir'                   => '/public_html/'.$nombreSubdominio,
         'disallowdot'           => '1',
         )
     );
     
-    file_put_contents("php://stderr", "OK - Subdominio listo.");
+    file_put_contents("php://stderr", "OK - Subdominio listo."."\n");
   }
 
   catch(Exception $e1)
   {
-    file_put_contents("php://stderr", "Error - No se creó el subdominio.");
+    file_put_contents("php://stderr", "Error - No se creó el subdominio."."\n");
     //echo("Ocurrió un error al intentar crear el subdominio.");
     echo(0);
   }
@@ -377,14 +377,14 @@
 
     catch(Exception $eaLGO)
     {
-      file_put_contents("php://stderr", "ERROR- Al crear index.");
+      file_put_contents("php://stderr", "ERROR- Al crear index."."\n");
       echo(0);
     }
  
 
     //print_r("OK");
-    file_put_contents("php://stderr", "OK - Se creó el index.html");
-    file_put_contents("php://stderr", "OK - Todo ok.");
+    file_put_contents("php://stderr", "OK - Se creó el index.html"."\n");
+    file_put_contents("php://stderr", "OK - Todo ok."."\n");
       
     //Indica que está todo ok al cliente
     echo(1);
@@ -393,7 +393,7 @@
 
   catch(Exception $e2)
   {
-    file_put_contents("php://stderr", "Error - No se subió el archivo HTML.");
+    file_put_contents("php://stderr", "Error - No se subió el archivo HTML."."\n");
     //echo("Ocurrió un error al intentar subir archivo HTML.");
     echo(0);
   }

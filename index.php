@@ -27,7 +27,7 @@
   try
   {
     $method = $_SERVER['REQUEST_METHOD'];
-    file_put_contents("php://stderr", "metodo es:  ".$method."<br>");
+    file_put_contents("php://stderr", "metodo es:  ".$method."\n");
 
     switch ($_SERVER['REQUEST_METHOD']) 
     {
@@ -372,8 +372,8 @@
       // Print and exit.
       die( print_r( $response ) );
 
-    print_r("OK");
-  }
+      print_r("OK");
+    }
 
     catch(Exception $eaLGO)
     {

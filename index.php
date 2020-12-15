@@ -270,7 +270,7 @@
               class="u-align-center u-container-style u-layout-cell u-palette-3-base u-right-cell u-size-20 u-layout-cell-3">
               <div class="u-container-layout u-valign-top u-container-layout-6">
                 <h4 class="u-text u-text-5">'.$arr["cabecera"]["carta3"]["titulo"].'</h4>
-                <p class="u-text u-text-body-alt-color u-text-6">'..$arr["cabecera"]["carta3"]["parrafo"]..'</p></div></div></div></div></div></section>
+                <p class="u-text u-text-body-alt-color u-text-6">'.$arr["cabecera"]["carta3"]["parrafo"].'</p></div></div></div></div></div></section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-2"
       id="carousel_9340">
       <div class="u-clearfix u-sheet u-sheet-1">

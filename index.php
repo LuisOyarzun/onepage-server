@@ -259,7 +259,7 @@
           <div class="u-layout-row">
             <div class="u-container-style u-layout-cell u-left-cell u-palette-1-base u-size-20 u-layout-cell-1">
               <div class="u-container-layout u-valign-top u-container-layout-4">
-                <h4 class="u-align-center u-text u-text-1">TITULO 1</h4>
+                <h4 class="u-align-center u-text u-text-1">'.$arr["cabecera"]["carta1"]["titulo"].'</h4>
                 <p class="u-align-center u-text u-text-body-alt-color u-text-2">Este, es el párrafo 1 de la página web
                   generada. Intente tener esta misma cantidad de palabras para un mejor estilo.</p>
               </div></div>

@@ -22,6 +22,8 @@
   $i=2;
   // Nombre del subdominio = nombre de la empresa
   $nombreSubdominio='';
+  // Array de datos recibidos
+  $arr='';
 
   // 1. Recibir datos
   try
@@ -72,19 +74,19 @@
     //     )
     // );
 
-    $dir = '/public_html/'.$nombreSubdominio;
+    $dir = '/public_html/'.$arr["nombreEmpresa"];
 
     $get_userdata = $cpanel->uapi(
       'SubDomain', 'addsubdomain',
           array(
-          'domain'                => $nombreSubdominio,
+          'domain'                => $arr["nombreEmpresa"],
           'rootdomain'            => $dominioPrincipal,
           'dir'                   => $dir,
           'disallowdot'           => '1',
       )
     );
     
-    file_put_contents("php://stderr", 'DIR es: '.$dir);
+    file_put_contents("php://stderr", 'DIR es: '.$dir."\n");
     file_put_contents("php://stderr", "OK - Subdominio listo."."\n");
   }
 

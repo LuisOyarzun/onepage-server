@@ -282,7 +282,7 @@
                   </h2>
                   <h4 class="u-text u-text-2">'.["cuerpo"]["seccion1"]["subtitulo"].'</h4>
                   <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion1"]["parrafo"].'</p></div></div>
-              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1"data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
+              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
     </section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-3"
       id="carousel_cc2d">

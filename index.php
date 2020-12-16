@@ -19,7 +19,7 @@
   // Trozo de código a repetir para generar productos y/o servicios en el onepage
   $codigoArepetir='';
   // Contador de repeticiones
-  $i=2;
+  $i=0;
   // Nombre del subdominio = nombre de la empresa
   $nombreSubdominio='';
   // Array de datos recibidos

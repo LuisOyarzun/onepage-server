@@ -113,7 +113,7 @@
   {
     $producto = `"producto`.$i.`"`;
     $codigoArepetir = $codigoArepetir.'<div class="u-effect-fade u-gallery-item"><div class="u-back-slide"><img class="u-back-image u-expanded" src="'.$arr["productosServicios"][$producto]["ruta"].'" alt="'.$arr["productosServicios"][$producto]["titulo"].'">
-    </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">Titulo</h3><p class="u-gallery-text">'.$arr["productosServicios"][$producto]["parrafo"].'</p></div></div>';
+    </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">'.$arr["productosServicios"][$producto]["titulo"].'</h3><p class="u-gallery-text">'.$arr["productosServicios"][$producto]["parrafo"].'</p></div></div>';
     $i = $i+1;
   }
   

@@ -282,7 +282,7 @@
                   </h2>
                   <h4 class="u-text u-text-2">'.["cuerpo"]["seccion1"]["subtitulo"].'</h4>
                   <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion1"]["parrafo"].'</p></div></div>
-              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
+              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" style="background-image: url('');  data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
     </section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-3"
       id="carousel_cc2d">
@@ -291,7 +291,7 @@
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1"
-                data-image-width="150" data-image-height="147">
+                data-image-width="150" data-image-height="147" style="background-image: url('');>
                 <div class="u-container-layout u-container-layout-1"></div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
@@ -301,7 +301,7 @@
                   <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion2"]["parrafo"].'</p></div></div></div></div></div></div></section>
     <section class="u-align-left u-clearfix u-palette-5-dark-3 u-section-4" id="carousel_7dd3">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout"><div class="u-layout-row"><div class="u-size-60"><div class="u-layout-col"><div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1"
+          <div class="u-layout"><div class="u-layout-row"><div class="u-size-60"><div class="u-layout-col"><div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" style="background-image: url(''); 
                     data-image-width="2250" data-image-height="1500">
                     <div class="u-container-layout u-container-layout-1"></div>
                   </div><div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">

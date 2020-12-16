@@ -19,7 +19,7 @@
   // Trozo de código a repetir para generar productos y/o servicios en el onepage
   $codigoArepetir='';
   // Contador de repeticiones
-  $i=0;
+  $i=1;
   // Nombre del subdominio = nombre de la empresa
   $nombreSubdominio='';
   // Array de datos recibidos
@@ -110,7 +110,7 @@
   while($i<=intval($cantidadProductos))
   {
     $codigoArepetir = $codigoArepetir.'<div class="u-effect-fade u-gallery-item"><div class="u-back-slide"><img class="u-back-image u-expanded" src="'.$arr["productosServicios"]["producto2"]["hipervinculo"].'" alt="Titulo">
-    </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">'.$arr["productosServicios"]["producto1"]["titulo"].'</h3><p class="u-gallery-text">'.$arr["productosServicios"]["producto1"]["parrafo"].'</p></div></div>';
+    </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">'.$arr["productosServicios"]["producto".$i]["titulo"].'</h3><p class="u-gallery-text">'.$arr["productosServicios"]["producto1"]["parrafo"].'</p></div></div>';
     $i = $i+1;
   }
   

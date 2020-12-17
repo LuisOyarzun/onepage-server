@@ -109,7 +109,7 @@
 
   while($i<=intval($cantidadProductos))
   {
-    $codigoArepetir = $codigoArepetir.'<div class="u-effect-fade u-gallery-item" style="cursor: pointer;" onclick="window.open('.$arr["productosServicios"]["producto".$i]["hipervinculo"].', '.'_blank'.');"><div class="u-back-slide"><img class="u-back-image u-expanded" src="'.$arr["productosServicios"]["producto".$i]["ruta"].'" alt="Titulo">
+    $codigoArepetir = $codigoArepetir.'<div class="u-effect-fade u-gallery-item" style="cursor: pointer;" onclick="window.open('.trim($arr["productosServicios"]["producto".$i]["hipervinculo"],"\\").', '.'_blank'.');"><div class="u-back-slide"><img class="u-back-image u-expanded" src="'.$arr["productosServicios"]["producto".$i]["ruta"].'" alt="Titulo">
     </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading">'.$arr["productosServicios"]["producto".$i]["titulo"].'</h3><p class="u-gallery-text">'.$arr["productosServicios"]["producto".$i]["parrafo"].'</p></div></div>';
     
     $i = $i+1;

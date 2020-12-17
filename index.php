@@ -246,7 +246,7 @@
     <div id="carousel-b991" data-interval="5000" data-u-ride="carousel"class="u-carousel u-expanded-width u-slider u-slider-1"><ol class="u-absolute-hcenter u-carousel-indicators u-hidden u-carousel-indicators-1"><li data-u-target="#carousel-b991" class="u-active" data-u-slide-to="0"></li>
     <li data-u-target="#carousel-b991" data-u-slide-to="1"></li><li data-u-target="#carousel-b991" class="u-grey-30" data-u-slide-to="2"></li></ol><div class="u-carousel-inner" role="listbox">
     <div class="test-slide u-active u-carousel-item u-container-style u-image u-slide u-image-1" style="background-image: url('.''.$arr["banner"]["ruta1"].''.');" data-image-width="1280" data-image-height="719"><div class="u-container-layout u-container-layout-1"></div></div>
-    <div class="u-carousel-item u-container-style u-image u-slide u-image-2" data-image-width="1280"data-image-height="853" style="background-image: url('.''.$arr["banner"]["2"].''.');" ><div class="u-container-layout u-container-layout-2"></div></div><div class="u-carousel-item u-container-style u-image u-slide u-image-3" data-image-width="1280"data-image-height="851" style="background-image: url('.''.$arr["banner"]["ruta3"].''.');">
+    <div class="u-carousel-item u-container-style u-image u-slide u-image-2" data-image-width="1280"data-image-height="853" style="background-image: url('.''.$arr["banner"]["ruta2"].''.');" ><div class="u-container-layout u-container-layout-2"></div></div><div class="u-carousel-item u-container-style u-image u-slide u-image-3" data-image-width="1280"data-image-height="851" style="background-image: url('.''.$arr["banner"]["ruta3"].''.');">
     <div class="u-container-layout u-container-layout-3"></div></div></div><a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-spacing-5 u-text-grey-30 u-carousel-control-1"href="#carousel-b991" role="button" data-u-slide="prev">
     <span aria-hidden="true"><svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg></span>
     <span class="sr-only">Previous</span></a><a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-spacing-5 u-text-grey-30 u-carousel-control-2"href="#carousel-b991" role="button" data-u-slide="next">
@@ -280,9 +280,9 @@
                 <div class="u-container-layout u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
                   <h2 class="u-text u-text-1">'.$arr["cuerpo"]["seccion1"]["titulo"].'<br>
                   </h2>
-                  <h4 class="u-text u-text-2">'.["cuerpo"]["seccion1"]["subtitulo"].'</h4>
+                  <h4 class="u-text u-text-2">'.$arr["cuerpo"]["seccion1"]["subtitulo"].'</h4>
                   <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion1"]["parrafo"].'</p></div></div>
-              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" style="background-image: url('');  data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
+              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" style="background-image: url('.''.$arr["cuerpo"]["seccion1"]["imagen"].''.');  data-image-width="1280" data-image-height="853"><div class="u-container-layout u-container-layout-2"></div></div></div></div></div></div>
     </section>
     <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-palette-5-dark-3 u-section-3"
       id="carousel_cc2d">
@@ -291,7 +291,7 @@
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1"
-                data-image-width="150" data-image-height="147" style="background-image: url('');>
+                data-image-width="150" data-image-height="147" style="background-image: url('.''.$arr["cuerpo"]["seccion2"]["imagen"].''.');>
                 <div class="u-container-layout u-container-layout-1"></div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
@@ -301,7 +301,7 @@
                   <p class="u-text u-text-3">'.$arr["cuerpo"]["seccion2"]["parrafo"].'</p></div></div></div></div></div></div></section>
     <section class="u-align-left u-clearfix u-palette-5-dark-3 u-section-4" id="carousel_7dd3">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout"><div class="u-layout-row"><div class="u-size-60"><div class="u-layout-col"><div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" style="background-image: url(''); 
+          <div class="u-layout"><div class="u-layout-row"><div class="u-size-60"><div class="u-layout-col"><div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" style="background-image: url('.''.$arr["cuerpo"]["seccion3"]["imagen"].''.'); 
                     data-image-width="2250" data-image-height="1500">
                     <div class="u-container-layout u-container-layout-1"></div>
                   </div><div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
